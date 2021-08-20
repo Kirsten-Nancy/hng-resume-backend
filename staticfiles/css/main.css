@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F8F9FA;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo {
+    width: 25%;
+}
+
+nav {
+    padding: 0 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+    padding: 3rem 15%;
+    margin-top: 5rem;
+}
+
+header img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.intro {
+    margin-top: 2rem;
+}
+.intro a{
+    text-decoration: none;
+    color: #0dcaf0;
+    margin-right: 1rem;
+}
+h2 {
+    padding-bottom: 1rem;
+}
+
+/* About section */
+#about {
+    padding: 2rem 15%;
+
+}
+
+
+#about ul {
+    padding-left: 1rem;
+}
+
+#about li::marker {
+    content: "↬";
+    color: #0dcaf0;
+    /* color: #4f2b4f; */
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+#about li {
+    padding-inline-start: 1ch;
+    margin-bottom: 0.8rem;
+}
+
+.experience img {
+    width: 80px;
+    margin-right: 1rem;
+}
+
+#projects {
+    padding: 3rem 15%;
+}
+#projects h2 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    margin: 2rem;
+}
+/* Project section */
+.card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 1rem;
+
+}
+.contact-form {
+    padding: 3rem 15%;
+}
+.contact-form h2{
+    text-align: center;
+}
+input[type=text], input[type=email],input[type=submit], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+}
+input[type=submit]{
+    border: none;
+    color: #F8F9FA;
+    background-color: #0dcaf0;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    header img {
+
+        margin-right: 5rem;
+    }
+
+    .intro {
+        width: 500px;
+        /* word-wrap: break-word; */
+    }
+
+    #about {
+        display: flex;
+    }
+
+    .experience {
+        width: 500px;
+        margin-right: 5rem;
+    }
+}

@@ -1,0 +1,200 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script src="https://kit.fontawesome.com/6e091b17ca.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="{% static 'images/letter-n.png' %}" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <title>Nancy Korir</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="{% static 'images/korir_blue.png' %}" alt="Logo">
+                Nancy Korir</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <img src="{% static 'images/kirsten.jpeg' %}" alt="">
+        <div class="intro">
+            <h1>Hi, I'm Korir.</h1>
+            <p>I'm currently a computer science student at Harbin Engineering University. I am passionate about creating
+                practical and innovative solutions to problems through code.</p>
+            <p>You can reach me through:</p>
+            <a href="https://github.com/Kirsten-Nancy" target="blank">
+                <i class="fab fa-2x fa-github-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nancy-korir-a53402110/" target="blank">
+                <i class="fab fa-2x fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/korjnan" target="blank">
+                <i class="fab fa-2x fa-twitter-square"></i>
+            </a>
+        </div>
+
+    </header>
+
+    <section id="about">
+        <div class="experience">
+            <h2>About Me</h2>
+            <p>My technical expertise includes proficiency in HTML, CSS, JavaScript, React, and Python.I have created
+                two personal full-stack web applications using React and Django. I developed and integrated a REST API
+                in both projects by using the Django REST framework. </p>
+            <p>I’m passionate about open-source projects and recently contributed in a project during the Open Source
+                Day organized by AnitaB.org.</p>
+            <p>Currently a frontend intern at <a href="https://internship.zuri.team/" target="_blank"><img
+                        src="{% static 'images/zuri.png' %}"></a></p>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 text-center" style="width: 20rem;">
+                    <img class="card-img-top mx-auto" src="{% static 'images/recipe.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Recipe Application</h5>
+                        <p class="card-text">I love baking pastries so I created a web app to help me share
+                            recipes with friends and family. I developed the application using React and Django.
+
+                        </p>
+                        <a href="https://github.com/Kirsten-Nancy/recipe-app" target="_blank"
+                            class="btn btn-outline-info">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center" style="width: 20rem;">
+                    <img class="card-img-top mx-auto" src="{% static 'images/todo-list.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">To-do Application</h5>
+                        <p class="card-text">I created a to-do application using React and Django. I also intergrated a
+                            calendar feature to the application. It's currently hosted on Heroku.</p>
+                        <a href="https://todo-react-django.herokuapp.com/" target="_blank"
+                            class="btn btn-outline-info">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center" style="width: 20rem;">
+                    <img class="card-img-top mx-auto" src="{% static 'images/vegetables.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Mavuno</h5>
+                        <p class="card-text">Developed a platform using Flutter and Firebase where farmers can post
+                            products directly to consumers to
+                            sell their products.</p>
+                        <a href="https://play.google.com/store/apps/details?id=nancykorir.e_mavuno" target="_blank"
+                            class="btn btn-outline-info">Read more</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-center" style="width: 20rem;">
+                    <img class="card-img-top mx-auto" src="{% static 'images/quiz.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Quiz App</h5>
+                        <p class="card-text">I used OpenTrivia Database API to create a quiz app using Flutter where the
+                            user
+                            can choose different categories.</p>
+                        <a href="https://github.com/Kirsten-Nancy/Quiz-App" target="_blank"
+                            class="btn btn-outline-info">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-center" style="width: 20rem;">
+                    <img class="card-img-top mx-auto" src="{% static 'images/padlock.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Password Generator and manager</h5>
+                        <p class="card-text">I created a password manager to generate safe and secure passwords using
+                            Python.</p>
+                        <a href="https://github.com/Kirsten-Nancy/28_40DayGUIIntermediateProjects" target="_blank"
+                            class="btn btn-outline-info">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Me</h2>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+
+    <footer>
+        <p>© 2021 Nancy Korir</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
