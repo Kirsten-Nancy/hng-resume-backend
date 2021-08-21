@@ -32,6 +32,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1:8000',
+    '127.0.0.1',
     'localhost',
     'korjnan-resume.herokuapp.com'
 ]
