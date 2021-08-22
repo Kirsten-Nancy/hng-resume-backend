@@ -114,10 +114,7 @@ h2 {
     height: 50vw;
     object-fit: cover;
 }
-footer p {
-    text-align: center;
-    margin: 2rem;
-}
+
 /* Project section */
 
 
@@ -143,15 +140,28 @@ input[type=text], input[type=email], textarea {
 input[type=submit]{
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     display: block;
     border: none;
     color: #F8F9FA;
     background-color: #0dcaf0;
     font-size: 1.2rem;
     border-radius: 12px;
+
+}
+footer {
+    background-color: #000;
+    color: #F8F9FA;
+    padding: 2rem;
+    /* padding: 3rem 25%; */
 }
 
+
+footer a{
+    text-decoration: none;
+    color: #F8F9FA;
+    margin-right: 2rem;
+}
 
 @media screen and (max-width: 768px) {
     header {
@@ -194,6 +204,7 @@ input[type=submit]{
     }
     #about {
         display: flex;
+        padding: 2rem 25%;
     }
 
     .experience {

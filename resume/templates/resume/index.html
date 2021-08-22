@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
     <title>Nancy Korir</title>
 </head>
@@ -56,17 +57,8 @@
         <div class="intro">
             <h1>Hi, I'm Nancy Korir.</h1>
             <h3>Software engineer </h3>
-
-
-            <!-- <p>I'm currently a computer science student at Harbin Engineering University. I am passionate about creating
-                practical and innovative solutions to problems through code. I’m passionate about open-source projects
-                and recently contributed in a project during the Open Source Day organized by AnitaB.org.</p>
-            <p>Currently a frontend intern at <a href="https://internship.zuri.team/" target="_blank"><img
-                        class="zuri-img" src="{% static 'images/zuri.png' %}"></a></p> -->
             <a href="https://drive.google.com/file/d/1F4Rl3MXnxZ069L6Zb-c8qrrG9u4guKIi/view?usp=sharing"
                 class="btn btn-info btn-lg" role="button">Download CV</a>
-
-
         </div>
 
     </header>
@@ -74,10 +66,10 @@
     <section>
         <h2>About Me</h2>
         <div id="about">
-            <div class="profile-div">
+            <div class="profile-div" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
                 <img src="{% static 'images/kirsten.jpeg' %}" alt="" class="profile-pic">
             </div>
-            <div class="experience">
+            <div class="experience" data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
                 <p>My technical expertise includes proficiency in HTML, CSS, JavaScript, React, and Python.I have
                     created
                     two full-stack web applications using React and Django. I developed and integrated a REST
@@ -110,7 +102,7 @@
 
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
-            <div class="col">
+            <div class="col" data-aos="zoom-in-down" data-aos-duration="2000">
                 <div class="card h-85 text-center mx-auto" style="width: 20rem;">
                     <img class="card-img-top mx-auto" src="{% static 'images/food.jpg' %}" alt="Card image cap">
                     <div class="card-body">
@@ -124,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="zoom-in-down" data-aos-duration="2000">
                 <div class="card h-85 text-center mx-auto" style="width: 20rem;">
                     <img class="card-img-top mx-auto" src="{% static 'images/todo.jpg' %}" alt="Card image cap">
                     <div class="card-body">
@@ -137,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="zoom-in-down" data-aos-duration="2000">
                 <div class="card h-85 text-center mx-auto" style="width: 20rem;">
                     <img class="card-img-top mx-auto" src="{% static 'images/veges.jpg' %}" alt="Card image cap">
                     <div class="card-body">
@@ -152,7 +144,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col" data-aos="zoom-in-down" data-aos-duration="2000">
                 <div class="card h-85 text-center mx-auto" style="width: 20rem;">
                     <img class="card-img-top mx-auto" src="{% static 'images/quiz.jpg' %}" alt="Card image cap">
                     <div class="card-body">
@@ -167,7 +159,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col" data-aos="zoom-in-down" data-aos-duration="2000">
                 <div class="card h-100 text-center mx-auto" style="width: 20rem;">
                     <img class="card-img-top mx-auto" src="{% static 'images/password.jpg' %}" alt="Card image cap">
                     <div class="card-body">
@@ -183,6 +175,40 @@
 
     </section>
 
+
+    <!-- <section>
+        <h2>Education & Skills</h2>
+        <div id="about">
+            <div class="profile-div">
+                <img src="{% static 'images/kirsten.jpeg' %}" alt="" class="profile-pic">
+            </div>
+            <div class="experience">
+                <p>My technical expertise includes proficiency in HTML, CSS, JavaScript, React, and Python.I have
+                    created
+                    two full-stack web applications using React and Django. I developed and integrated a REST
+                    API
+                    in both projects by using the Django REST framework. </p>
+                <p>I’m passionate about open-source projects and recently contributed in a project during the Open
+                    Source
+                    Day organized by AnitaB.org.</p>
+                <p>Currently a frontend intern at <a href="https://internship.zuri.team/" target="_blank"><img
+                            class="zuri-img" src="{% static 'images/zuri.png' %}"></a></p>
+            </div>
+        </div>
+
+
+        <!-- <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+            </ul>
+        </div> -->
+    </section> -->
+
     <section class="contact-form">
         <h2>Contact Me</h2>
 
@@ -195,7 +221,7 @@
 
 
     <footer>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-2 col-lg-3">
                 <p>Harbin Engineering University</p>
                 <p>Nangang ST.</p>
@@ -205,18 +231,23 @@
                 <p>13104072856</p>
             </div>
             <div class="col-md-2 col-lg-3">
-                <a href="https://github.com/Kirsten-Nancy" target="blank">
-                    <i class="fab fa-2x fa-github-square"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/nancy-korir-a53402110/" target="blank">
-                    <i class="fab fa-2x fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/korjnan" target="blank">
-                    <i class="fab fa-2x fa-twitter-square"></i>
-                </a>
+
+                <p>
+
+                    <a href="https://github.com/Kirsten-Nancy" target="blank">
+                        <i class="fab fa-2x fa-github-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nancy-korir-a53402110/" target="blank">
+                        <i class="fab fa-2x fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/korjnan" target="blank">
+                        <i class="fab fa-2x fa-twitter-square"></i>
+                    </a>
+                </p>
+                <p>© 2021 Nancy Korir</p>
             </div>
         </div>
-        <p>© 2021 Nancy Korir</p>
+
         </div>
     </footer>
 
@@ -231,6 +262,11 @@
         });
     </script>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
