@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    outline: none;
 }
 
 body {
@@ -27,6 +28,13 @@ body {
 
 nav {
     padding: 0 2rem;
+}
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -74,7 +82,7 @@ h2 {
 }
 
 /* About section */
-#about {
+#about, #education {
     padding: 2rem 15%;
 
 }
@@ -96,7 +104,7 @@ h2 {
     padding-inline-start: 1ch;
     margin-bottom: 0.8rem;
 }
-.experience {
+.prof-description {
     margin-top: 1rem;
 }
 
@@ -106,21 +114,85 @@ h2 {
 
 }
 
-/* #projects {
-    padding: 3rem;
-} */
+/* Project section */
 .card-img-top {
     width: 100%;
     height: 50vw;
     object-fit: cover;
 }
 
-/* Project section */
+/* Education */
+.education-div {
+    /* background-color: #0DCAF0; */
+    background-color: #FFFFFF;
+
+    width: 300px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.grad{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.grad-cap {
+    width: 100px;
+    object-fit: cover;
+    
+}
+td {
+    padding-right: 10px;
+}
+.button {
+    width: 100%;
+    /* background-color: #ddd; */
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .button:hover {
+    /* background-color: #f1f1f1; */
+    background-color: #0dcaf0;
+  } 
+
+  .buttons {
+    width: 100%;
+    table-layout: fixed;
+    /* border-collapse: separate; */
+    border-spacing: 4px 10px;
+    /* background-color: red; */
+}
+
+/* Experience */
+.experience {
+    background-color: #FFFFFF;
+    /* margin-bottom: 1rem; */
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 15%;
+}
+
+.position {
+    /* width: 250px; */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.company {
+    text-align: center;
+}
 
 
 .contact-form {
     padding: 3rem;
-    
 }
 
 
@@ -152,8 +224,8 @@ input[type=submit]{
 footer {
     background-color: #000;
     color: #F8F9FA;
-    padding: 2rem;
-    /* padding: 3rem 25%; */
+    padding: 2rem 15%;
+    justify-content: center;
 }
 
 
@@ -190,10 +262,6 @@ footer a{
         margin-right: 5rem;
     } 
 
-    .intro {
-        width: 500px;
-        /* word-wrap: break-word; */
-    }
     #projects {
         padding: 3rem 15%;
     }
@@ -202,17 +270,43 @@ footer a{
         height: 15vw;
         object-fit: cover;
     }
-    #about {
+    #about, #education {
         display: flex;
-        padding: 2rem 25%;
-    }
-
-    .experience {
-        width: 500px;
-        margin-right: 5rem;
-    }
-    .contact-form {
-        padding: 3rem 20%;
+        padding:  3rem 18%;
         
     }
+    .experience {
+        display: flex;
+        padding:  3rem 2rem;
+        margin: 2rem 18%;
+    }
+    .position {
+        width: 250px;
+        border-right: 2px solid #EBEBF3;
+        margin-right: 2rem;
+        text-align: left;
+    }
+    .company {
+        text-align: left;
+    }
+    
+    .education-div {
+        width: 400px;
+        margin-right: 4rem;
+        padding: 2rem;
+        border-radius: 8px;
+    }
+
+    .skills{
+        width: 400px;
+        margin-top: 4rem;
+        /* display: inline-block; */
+    }
+
+    .contact-form {
+        padding: 3rem 18%;
+        
+    }
+
+    
 }

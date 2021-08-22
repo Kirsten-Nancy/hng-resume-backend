@@ -40,11 +40,17 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#projects">Portfolio</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -66,10 +72,10 @@
     <section>
         <h2>About Me</h2>
         <div id="about">
-            <div class="profile-div" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
+            <div class="profile-div" data-aos="zoom-in-right" data-aos-duration="3000" >
                 <img src="{% static 'images/kirsten.jpeg' %}" alt="" class="profile-pic">
             </div>
-            <div class="experience" data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
+            <div class="prof-description" data-aos="zoom-in-left" data-aos-duration="3000">
                 <p>My technical expertise includes proficiency in HTML, CSS, JavaScript, React, and Python.I have
                     created
                     two full-stack web applications using React and Django. I developed and integrated a REST
@@ -84,21 +90,11 @@
         </div>
 
 
-        <!-- <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Python</li>
-            </ul>
-        </div> -->
     </section>
 
 
     <section id="projects">
-        <h2>My Works</h2>
+        <h2>My Portfolio</h2>
 
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
@@ -176,40 +172,102 @@
     </section>
 
 
-    <!-- <section>
+    <section>
         <h2>Education & Skills</h2>
-        <div id="about">
-            <div class="profile-div">
-                <img src="{% static 'images/kirsten.jpeg' %}" alt="" class="profile-pic">
+        <div id="education">
+            <div class="education-div" data-aos="zoom-in-right" data-aos-duration="2000">
+                <div class="grad">
+                    <img class="grad-cap" src="{% static 'images/graduate.png' %}">
+                </div>
+
+                <div>
+                    <small>2018-2022</small>
+                    <h6>Bsc. in Computer Science</h6>
+                    <p>Harbin Engineering University</p>
+                </div>
+                <div>
+                    <small>2017-2018</small>
+                    <h6>Chinese Language</h6>
+                    <p>Northeast Normal University</p>
+                </div>
             </div>
-            <div class="experience">
-                <p>My technical expertise includes proficiency in HTML, CSS, JavaScript, React, and Python.I have
-                    created
-                    two full-stack web applications using React and Django. I developed and integrated a REST
-                    API
-                    in both projects by using the Django REST framework. </p>
-                <p>I’m passionate about open-source projects and recently contributed in a project during the Open
-                    Source
-                    Day organized by AnitaB.org.</p>
-                <p>Currently a frontend intern at <a href="https://internship.zuri.team/" target="_blank"><img
-                            class="zuri-img" src="{% static 'images/zuri.png' %}"></a></p>
+            <div class="skills" data-aos="zoom-in-left" data-aos-duration="2000">
+                <table class="buttons">
+                    <tr>
+                        <td> <button class="button">HTML5</button></td>
+                        <td><button class="button">CSS</button></td>
+                       
+                                         
+                    </tr>
+                    <tr>
+                        <td><button class="button">Javascript</button></td>       
+                        <td><button class="button">Python</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button">Django</button></td>
+                        <td><button class="button">Git</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button">PostgreSQL</button></td>
+                        <td><button class="button">Cloud Firestore</button></td>
+                        
+                        
+                    </tr>
+
+                </table>
+              
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div class="position">
+                <h6>Software Developer</h6>
+                <p>Remote</p>
+                <p>Aug 2021 - Oct 2021</p>
+                <button class="btn btn-outline-info">Internship</button>
+            </div>
+            <div class="company">
+                <h6>OpenGenus Foundation</h6>
+                <p> Develop and design a small system to learn how a large real system works.</p>
+                <p>Publish technical articles on system design and development. </p>
+            </div>
+        </div>
+        <div class="experience">
+            <div class="position">
+                <h6>Mentee – Python Track</h6>
+                <p>Remote</p>
+                <p>Jun 2020 - Aug 2020</p>
+                <button class="btn btn-outline-info">Mentorship</button>
+            </div>
+            <div class="company">
+                <h6>She Code Africa</h6>
+                <p>Created an e-commerce web application using HTML, CSS and Django</p>
+                <p>Published a technical article on the applications of artificial intelligence in agriculture. </p>
+            </div>
+        </div>
+
+        <div class="experience">
+            <div class="position">
+                <h6>Information Technology Intern</h6>
+                <p>Nairobi, Kenya</p>
+                <p>Jan 2021 - Mar 2019</p>
+                <button class="btn btn-outline-info">Internship</button>
+            </div>
+            <div class="company">
+                <h6>Quasar Group Limited</h6>
+                <p>Designed, developed and maintained the company’s website using HTML, CSS and
+                    JavaScript.</p>
+                <p>Maintained the company’s network infrastructure.</p>
             </div>
         </div>
 
 
-        <!-- <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Python</li>
-            </ul>
-        </div> -->
-    </section> -->
+    </section>
 
-    <section class="contact-form">
+    <section id="contact" class="contact-form">
         <h2>Contact Me</h2>
 
         <form action="" method="POST">
