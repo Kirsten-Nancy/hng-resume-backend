@@ -226,6 +226,7 @@ footer {
     color: #F8F9FA;
     padding: 2rem 15%;
     justify-content: center;
+    overflow: hidden;
 }
 
 
