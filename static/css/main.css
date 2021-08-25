@@ -5,6 +5,11 @@
     box-sizing:border-box;
 }
 
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
 body {
     /* background-color: #F8F9FA; */
     background-color: #F7F7F7;
@@ -53,6 +58,7 @@ header {
     margin-top: 5rem;
     text-align: center;
 }
+
 
 h3 {
     color: darkgray;
